@@ -1,0 +1,47 @@
+﻿using System;
+class Program
+{
+    static void Main()
+    {
+        int A, B, C;
+        int maior;
+        int soma;
+
+        Console.Write("Digite o valor de A: ");
+        A = int.Parse(Console.ReadLine());
+
+        Console.Write("Digite o valor de B: ");
+        B = int.Parse(Console.ReadLine());
+
+        Console.Write("Digite o valor de C: ");
+        C = int.Parse(Console.ReadLine());
+
+        if (A > B && A > C)
+        {
+            maior = A;
+        }
+        else if (B > A && B > C)
+        {
+            maior = B;
+        }
+        else
+        {
+            maior = C;
+        }
+
+        soma = A + B + C;
+
+        string resultadoParidade;
+        if (soma % 2 == 0)
+        {
+            resultadoParidade = "par";
+        }
+        else
+        {
+            resultadoParidade = "ímpar";
+        }
+
+        Console.WriteLine("O maior valor digitado foi: " + maior);
+        Console.WriteLine("A soma dos valores (" + soma + ") é " + resultadoParidade + ".");
+    }
+}
