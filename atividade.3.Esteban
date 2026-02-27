@@ -1,0 +1,22 @@
+﻿using System;
+class Program
+{
+    static void Main()
+    {
+        double nota1, nota2, nota3;
+        double mediaFinal;
+
+        Console.Write("Digite a primeira nota: ");
+        nota1 = double.Parse(Console.ReadLine());
+
+        Console.Write("Digite a segunda nota: ");
+        nota2 = double.Parse(Console.ReadLine());
+
+        Console.Write("Digite a terceira nota: ");
+        nota3 = double.Parse(Console.ReadLine());
+
+        mediaFinal = (nota1 * 2 + nota2 * 3 + nota3 * 5) / 10;
+
+        Console.WriteLine("A média final do aluno é: " + mediaFinal);
+    }
+}
