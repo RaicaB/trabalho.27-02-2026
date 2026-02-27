@@ -1,0 +1,26 @@
+﻿using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x1, y1, x2, y2;
+        double d; 
+
+        Console.Write("Digite x1: ");
+        x1 = int.Parse(Console.ReadLine());
+
+        Console.Write("Digite y1: ");
+        y1 = int.Parse(Console.ReadLine());
+
+        Console.Write("Digite x2: ");
+        x2 = int.Parse(Console.ReadLine());
+
+        Console.Write("Digite y2: ");
+        y2 = int.Parse(Console.ReadLine());
+
+        d = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
+
+        Console.WriteLine("Resultado: " + d);
+    }
+}
